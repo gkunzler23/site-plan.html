@@ -1,63 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fuzzy+Bubbles:wght@700&family=Inter+Tight:wght@200&family=Josefin+Sans:ital,wght@1,200;1,300;1,500&family=Open+Sans:ital,wght@1,300&family=Playfair+Display&family=Zen+Dots&display=swap'); </style>
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="styles\style.css">
 </head>
 <body>
   <header>
-    <div>
+    <div class="phone">
       <p>(123) 456-7890</p>
     </div>
-    <div>
-      <img src="images\triple_threat_logo.png" alt="Logo image">
-      <a href="home.html">Home</a>
-      <a href="reservation.html">Reservation</a>
-      <a href="menu.html">Menu</a>
+    <div class="header_center">
+      <div class="center-top">
+        <img class="header_logo" src="images\triple_threat_logo.png" alt="Logo image">
+      </div>
+      <div class = "center-bottom">
+        <a href="home.html">Home</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="menu.html">Menu</a>
+      </div>
     </div>
-    <div>
+    <div class="email">
       <p>example@gmail.com</p>
     </div>
   </header> 
-  <main>
-    <img src="images\istockphoto-1181396290-1024x1024.jpg" alt="Reservation">
-    <p>
-      Here are the 3 things you can use on our website to better plan your evening:
-    </p>
-    <ol>
-        <li>-	Reservation! Instead of waiting to speak to someone over the phone,<br>
-          you can click on the reservation tab at the restaurant of your choosing <br>
-          and see what seating is available and would fit a group of your size.<br>
-          Click to reserve and experience a quick seating upon your arrival.<br>
-        </li>
-        <li>-	Order ahead! See the full menu of the restaurant of your choosing<br>
-          and order ahead of time. Enjoy a nice meal at the time you are seated.<br>
-        </li>
-        <li>-	What Restaurants are busy? Restaurants in your local area on this<br>
-          website will be color coded according to the number of reservations.<br>
-          Green will show a not so busy restaurant, Yellow will be moderately<br>
-          busy, and Red will be very busy. This will help you in your decision<br>
-          making of which restaurant to attend.
-        </li>
-    </ol>
+  <main class="reservation_main">
+    <div class="res_text">
+      <p>
+        Here are the 3 things you can use on our website to better plan your evening:
+      </p>
+      <ol>
+          <li>-	Reservation! Instead of waiting to speak to someone over the phone,<br>
+            you can click on the reservation tab at the restaurant of your choosing <br>
+            and see what seating is available and would fit a group of your size.<br>
+            Click to reserve and experience a quick seating upon your arrival.<br>
+          </li>
+          <li>-	Order ahead! See the full menu of the restaurant of your choosing<br>
+            and order ahead of time. Enjoy a nice meal at the time you are seated.<br>
+          </li>
+          <li>-	What Restaurants are busy? Restaurants in your local area on this<br>
+            website will be color coded according to the number of reservations.<br>
+            Green will show a not so busy restaurant, Yellow will be moderately<br>
+            busy, and Red will be very busy. This will help you in your decision<br>
+            making of which restaurant to attend.
+          </li>
+      </ol>
+    </div>
+    <img class="img_reservation" src="images\reservation_image.PNG" alt="Reservation">
   </main>
-  <footer>
+
+  <div class="availability">
+    <div class="busy">
+      <h2 class="rd-txt">Busy</h2>
+
+      <label for="red">Select a restaurant:</label>
+
+      <select name="red" id="red">
+        <option value="blank"></option>
+        <option value="Texas">Texas Roadhouse</option>
+        <option value="Applebees">Applebees</option>
+        <option value="Olive">Olive Garden</option>
+        <option value="PPC">Pizza Pie Cafe</option>
+      </select>
+    </div>
+
+    <div class="moderate">
+      <h2 class="ylw-txt">Moderate</h2>
+      
+      <label for="yellow">Select a restaurant:</label>
+
+      <select name="yellow" id="yellow">
+        <option value="blank"></option>
+        <option value="Texas">Texas Roadhouse</option>
+        <option value="Applebees">Applebees</option>
+        <option value="Olive">Olive Garden</option>
+        <option value="PPC">Pizza Pie Cafe</option>
+      </select>
+    </div>
+    
+    <div class="available">
+      <h2 class="grn-txt">Available</h2>
+      
+      <label for="green">Select a restaurant:</label>
+
+      <select name="green" id="green">
+        <option value="blank"></option>
+        <option value="Texas">Texas Roadhouse</option>
+        <option value="Applebees">Applebees</option>
+        <option value="Olive">Olive Garden</option>
+        <option value="PPC">Pizza Pie Cafe</option>
+      </select>
+    </div>
+  </div>
+  <div class="button-container">
+    <button class="button" type="button">Reserve</button>
+  </div>
+  <footer class="res_footer">
     <p>Making your experiences at local resturaunts enjoyable and stress free. See your favorite sit down resturaunts and reserve/order in advance to avoid long waits being seated and fed.</p>  <!-- change this -->
     <p>If you hate wait times and having to change plans last second, then this is the site for you! Check out wait times and reserve your spot prior to leaving your front door. It's that easy!!</p>  <!-- change this -->
     <div class="social">
-      <a href="https://facebook.com" target="_blank">
-          <img src="images/facebook.png" alt="fb icon">
-      </a>
-      <a href="https://twitter.com" target="_blank">
-          <img src="images/twitter.png" alt="twitter icon">
-      </a>
-      <a href="https://instagram.com" target="_blank">
-          <img src="images/instagram.png" alt="instagram icon">
-      </a>
+      <div>
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+      </div>
+      <p>
+        &copy;Triple-Threat 2022
+      </p>
   </div>
-  </footer>  
+  </footer> 
 </body>
 </html>
